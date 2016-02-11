@@ -1,8 +1,115 @@
 * {
+  margin:0px;
+  padding:0px;
   box-sizing: border-box;
+}
+
+body {
+  border: 2px solid red;
+  margin: 50px;
 }
 
 img {
   height: 300px;
   width: 300px;
+  border-radius: 20%;
+  margin-left: 30px;
+}
+
+.header {
+  /*border: 1px solid blue;*/
+  display: inline-block;
+}
+
+.social {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  /*border: 1px solid red;*/
+  float: left;
+}
+
+.social li~li {
+  margin-left: 15px;
+}
+
+.social li {
+  display: inline;
+}
+
+.social a {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #777;
+  text-align: center;
+  padding-top: 10px;
+  transition: background-color .5s, color 0s;
+}
+
+.social a[id="linked"]:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.social a[id="git"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.social a[id="twitter"]:hover {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.social a[id="mail"]:hover {
+  background-color: #FF8000;
+  color: #fff;
+}
+
+.nav {
+  position: relative;
+  left: 200px;
+  /*border: 1px solid red;*/
+  float: right;
+}
+
+.nav h1 {
+  font-family: Quicksand, sans-serif;
+  color: #000;
+  font-size: 5em;
+}
+
+.nav ul {
+  margin-right: 50px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  padding: 30px;
+  font-size: 1.5em;
+  font-family: Georgia, sans-serif;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+.main {
+  display: inline-block;
+}
+
+.main .content {
+  border: 1px solid blue;
+  margin-left: 100px;
+  float: right;
 }

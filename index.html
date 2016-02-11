@@ -4,49 +4,67 @@
 
   <head>
     <title>Patrick Moran</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
 
-    <header>
+    <div class="header">
       <div class="social">
         <ul>
-          <li><a href="https://www.linkedin.com/in/patrick-moran-7565812a">LinkedIn</a></li>
-          <li><a href="https://github.com/pkmoran">GitHub</a></li>
-          <li><a href="https://twitter.com/pkmoran">Twitter</a></li>
-          <li><a href="https://pkmoran.github.io/contact">Mail</a></li>
+          <li><a href="https://www.linkedin.com/in/patrick-moran-7565812a" id="linked" class="fa fa-linkedin-square"></a></li>
+          <li><a href="https://github.com/pkmoran" id="git" class="fa fa-github"></a></li>
+          <li><a href="https://twitter.com/pkmoran" id="twitter" class="fa fa-twitter"></a></li>
+          <li><a href="https://pkmoran.github.io/contact" id="mail" class="fa fa-envelope"></a></li>
         </ul>
       </div>
-      <h1>Patrick Moran</h1>
-    </header>
 
-    <div class="nav">
-      <ul>
-        <li><a href="https://pkmoran.github.io/about">About</a></li>
-        <li><a href="https://pkmoran.github.io/projects">Projects</a></li>
-        <li><a href="https://pkmoran.github.io/contact">Contact</a></li>
-      </ul>
+      <div class="nav">
+      <h1>Patrick Moran</h1>
+        <ul>
+          <li><a href="https://pkmoran.github.io/about">About</a></li><!--<li><a href="javascript:void(0)" id="aboutLink">About</a></li>-->
+          <li><a href="https://pkmoran.github.io/projects">Projects</a></li><li><!--<a href="javascript:void(0)" id="projectsLink">Projects</a></li>-->
+          <li><a href="https://pkmoran.github.io/contact">Contact</a></li><!--<li><a href="javascript:void(0)" id="contactLink">Contact</a></li>-->
+        </ul>
+      </div>
     </div>
 
     <div class="main">
       <img src="images/Me_holding_alligator.jpg" alt="Patrick holding a baby alligator." />
-      <div id="about">
-        <p>Patrick is a....</p>
-      </div>
-      <div id="projects">
-
-      </div>
+      <div class="content">
+        <div id="about">
+          <p>Patrick is a....</p>
+        </div>
+        <div id="projects">
+          <h2>Coming Soon!</h2>
+          <div class="projects_upper">
+            <div class="project_thumb" id="1">
+            </div>
+            <div class="project_thumb" id="2">
+            </div>
+            <div class="project_thumb" id="3">
+            </div>
+          </div>
+          <div class="projects_lower">
+            <div class="project_thumb" id="4">
+            </div>
+            <div class="project_thumb" id="5">
+            </div>
+            <div class="project_thumb" id="6">
+            </div>
+          </div>
+        </div>
       <div id="contact">
-
+        <h3>Send me an email</h3>
       </div>
     </div>
 
     <footer>
       Created by Patrick Moran
     </footer>
-
+    <script src="script.js"></script>
   </body>
 
 </html>
