@@ -18,9 +18,9 @@ img {
   border-radius: 20%;
 }
 
-.hidden {
+/*.hidden {
   display: none;
-}
+}*/
 
 footer {
   clear: both;
@@ -119,7 +119,6 @@ footer {
 }
 
 .main .content {
-  /*border: 1px solid blue;*/
   margin-left: 80px;
   float: right;
 }
