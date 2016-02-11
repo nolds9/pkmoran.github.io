@@ -5,15 +5,25 @@
 }
 
 body {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   margin: 50px;
 }
 
 img {
-  height: 300px;
-  width: 300px;
+  position: relative;
+  top: 50px;
+  left: 30px;
+  height: 250px;
+  width: 250px;
   border-radius: 20%;
-  margin-left: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  clear: both;
 }
 
 .header {
@@ -92,7 +102,7 @@ img {
 }
 
 .nav a {
-  padding: 30px;
+  margin: 0px 30px;
   font-size: 1.5em;
   font-family: Georgia, sans-serif;
   color: #777;
@@ -109,7 +119,19 @@ img {
 }
 
 .main .content {
-  border: 1px solid blue;
-  margin-left: 100px;
+  /*border: 1px solid blue;*/
+  margin-left: 80px;
   float: right;
+}
+
+.projects_upper, .projects_lower {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects_upper > div, .projects_lower > div {
+  border: 1px solid black;
+  margin: 25px;
+  height: 200px;
+  width: 200px;
 }
