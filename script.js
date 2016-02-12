@@ -4,46 +4,33 @@ document.addEventListener("DOMContentLoaded", function () {
   var projects = document.getElementById("projects");
   var contact = document.getElementById("contact");
 
-  about.style.visibility = "visible";
-  projects.style.visibility = "hidden";
-  contact.style.visibility = "hidden";
+  projects.style.display = "none";
+  contact.style.display = "none";
 
   function showAbout() {
     var aboutLink = document.getElementById("aboutLink");
     aboutLink.addEventListener("click", function () {
-      about.style.visibility = "visible";
-      projects.style.visibility = "hidden";
-      contact.style.visibility = "hidden";
-
-      // about.className = "content";
-      // projects.className = "";
-      // contact.className = "";
+      about.style.display = "";
+      projects.style.display = "none";
+      contact.style.display = "none";
     });
   }
 
   function showProjects() {
     var projectsLink = document.getElementById("projectsLink");
     projectsLink.addEventListener("click", function () {
-      projects.style.visibility = "visible";
-      about.style.visibility = "hidden";
-      contact.style.visibility = "hidden";
-
-      // projects.className = "content";
-      // about.className = "";
-      // contact.className = "";
+      projects.style.display = "";
+      about.style.display = "none";
+      contact.style.display = "none";
     });
   }
 
   function showContact() {
     var contactLink = document.getElementById("contactLink");
     contactLink.addEventListener("click", function () {
-      contact.style.visibility = "visible";
-      about.style.visibility = "hidden";
-      projects.style.visibility = "hidden";
-
-      // contact.className = "content";
-      // about.className = "";
-      // projects.className = "";
+      contact.style.display = "";
+      about.style.display = "none";
+      projects.style.display = "none";
     });
   }
 
