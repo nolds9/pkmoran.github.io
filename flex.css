@@ -10,13 +10,50 @@ img {
 }
 
 .header {
-  border: 1px solid red;
   display: flex;
 }
 
 .social {
-  border: 1px solid red;
   width: 25%;
+  display: flex;
+  text-align: center;
+}
+
+.social a {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #777;
+  padding-top: 10px;
+  transition: background-color .5s, color 0s;
+  margin: auto;
+}
+
+.social a[id="mail"] {
+  padding-top: 8px;
+}
+
+.social a[id="linked"]:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.social a[id="git"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.social a[id="twitter"]:hover {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.social a[id="mail"]:hover {
+  background-color: #7e5899;
+  color: #fff;
 }
 
 .nav {
@@ -41,10 +78,6 @@ img {
   display: flex;
   align-items: center;
 
-}
-
-.social li {
-  display: inline;
 }
 
 .nav a {
