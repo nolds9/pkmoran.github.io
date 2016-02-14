@@ -4,33 +4,47 @@ document.addEventListener("DOMContentLoaded", function () {
   var projects = document.getElementById("projects");
   var contact = document.getElementById("contact");
 
+  var aboutLink = document.getElementById("aboutLink");
+  var projectsLink = document.getElementById("projectsLink");
+  var contactLink = document.getElementById("contactLink");
+
+  about.style.display = "none";
   projects.style.display = "none";
   contact.style.display = "none";
 
   function showAbout() {
-    var aboutLink = document.getElementById("aboutLink");
     aboutLink.addEventListener("click", function () {
       about.style.display = "";
       projects.style.display = "none";
       contact.style.display = "none";
+
+      aboutLink.style.textDecoration = "underline";
+      projectsLink.style.textDecoration = "";
+      contactLink.style.textDecoration = "";
     });
   }
 
   function showProjects() {
-    var projectsLink = document.getElementById("projectsLink");
     projectsLink.addEventListener("click", function () {
       projects.style.display = "";
       about.style.display = "none";
       contact.style.display = "none";
+
+      projectsLink.style.textDecoration = "underline";
+      aboutLink.style.textDecoration = "";
+      contactLink.style.textDecoration = "";
     });
   }
 
   function showContact() {
-    var contactLink = document.getElementById("contactLink");
     contactLink.addEventListener("click", function () {
       contact.style.display = "";
       about.style.display = "none";
       projects.style.display = "none";
+
+      contactLink.style.textDecoration = "underline";
+      aboutLink.style.textDecoration = "";
+      projectsLink.style.textDecoration = "";
     });
   }
 
