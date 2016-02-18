@@ -1,3 +1,4 @@
+/* NHO: love the styles, and your css validates! */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -48,6 +49,8 @@ img {
   transition: background-color .5s, color 0s;
   margin: auto;
 }
+
+/* NHO: great code comments! */
 
 /*the envelope icon must be sized a bit differently from the other icons*/
 .social a[id="mail"] {
@@ -121,3 +124,6 @@ section {
 .nav a:hover {
   color: #000;
 }
+
+/* NHO: moving the footer tags into the html's body seemed to fix the floating footer issue; if it persists, I'd look into sticky footer solutions.*/
+/* NHO: in order to make it responsive: adjust according to screen size, you have to use media queries...*/

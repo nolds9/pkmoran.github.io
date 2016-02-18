@@ -1,5 +1,6 @@
+// NHO: really like the functional approach you took in this implementation. Can you think of any pros/cons to refactor using an Object Oriented approach
 document.addEventListener("DOMContentLoaded", function () {
-
+  // NHO: I think an important question to ask is what is the current scope of these variables
   var about = document.getElementById("about");
   var projects = document.getElementById("projects");
   var contact = document.getElementById("contact");
@@ -12,10 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
   projects.style.display = "none";
   contact.style.display = "none";
 
+ // NHO: Could see these functions as methods for an object
   function showAbout() {
     aboutLink.addEventListener("click", function () {
-      about.style.display = "";
-      projects.style.display = "none";
+      about.style.display = ""; // NHO: is there any difference between this and display = "none"
+      projects.style.display = "none"; // NHO: if not I'd probably choose one and stick to it for consistency's sake
       contact.style.display = "none";
 
       aboutLink.style.textDecoration = "underline";
